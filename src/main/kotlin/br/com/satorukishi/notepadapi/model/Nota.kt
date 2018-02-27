@@ -6,7 +6,7 @@ import org.springframework.data.mongodb.core.mapping.Document
 // No MongoDB, o ID é uma String (hash) e não um INT
 
 @Document
-data class Nota(@Id var id:String, var titulo: String, var conteudo: String) {
+data class Nota(@Id var id:String? = null, var titulo: String, var conteudo: String) {
 
 
 
